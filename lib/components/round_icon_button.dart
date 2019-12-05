@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
+import '../main/constants.dart';
 
 /*
 A very handy button widget similar to a FAB with a custom icon

@@ -1,11 +1,13 @@
+import 'package:bmi_calculator/pages/result_page.dart';
 import 'package:flutter/material.dart';
-import 'reusable_card.dart';
-import 'card_content.dart';
+import '../components/reusable_card.dart';
+import '../components/card_content.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'enum_gender.dart';
-import 'constants.dart';
-import 'round_icon_button.dart';
-import 'result_page.dart';
+import '../main/enum_gender.dart';
+import '../main/constants.dart';
+import '../components/round_icon_button.dart';
+import '../components/big_flat_navigation_button.dart';
+import 'package:bmi_calculator/brain/calculator_brain.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -21,16 +23,7 @@ class _InputPageState extends State<InputPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        elevation: 10,
-        title: Center(
-          child: Text(
-            'BMI Calculator',
-            textAlign: TextAlign.center,
-            style: TextStyle(fontSize: 30, fontFamily: 'Tomorrow'),
-          ),
-        ),
-      ),
+      appBar: bmiAppBar,
       body: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
@@ -224,25 +217,26 @@ class _InputPageState extends State<InputPage> {
               ],
             ),
           ), // Weight and Age
-          GestureDetector(
+
+          BigFlatNavigationButton(
             onTap: () {
-              Navigator.pushNamed(context, '/result');
-            },
-            child: Container(
-              margin: EdgeInsets.only(top: 7),
-              color: kBottomContainerColor,
-              height: kBottomContainerHeight,
-              width: double.infinity,
-              child: Center(
-                child: Text(
-                  'Calculate Your BMI',
-                  textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 25, fontFamily: 'Tomorrow'),
+              CalculatorBrain calc =
+                  CalculatorBrain(height: height, weight: weight);
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ResultPage(
+                    bmi: calc.calculateBMI(),
+                    result: calc.getResult(),
+                    msg: calc.getMsg(),
+                  ),
                 ),
-              ),
-            ),
-          ) // Calculate Button
+              );
+            },
+            label: 'Calculate Your BMI',
+          ),
         ],
+        // Calculate Button
       ),
     );
   }
