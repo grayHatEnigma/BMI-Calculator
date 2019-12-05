@@ -5,6 +5,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'enum_gender.dart';
 import 'constants.dart';
 import 'round_icon_button.dart';
+import 'result_page.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -222,20 +223,25 @@ class _InputPageState extends State<InputPage> {
                 ), //Age
               ],
             ),
-          ),
-          Container(
-            margin: EdgeInsets.only(top: 7),
-            color: kBottomContainerColor,
-            height: kBottomContainerHeight,
-            width: double.infinity,
-            child: Center(
-              child: Text(
-                'Calculate Your BMI',
-                textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 25, fontFamily: 'Tomorrow'),
+          ), // Weight and Age
+          GestureDetector(
+            onTap: () {
+              Navigator.pushNamed(context, '/result');
+            },
+            child: Container(
+              margin: EdgeInsets.only(top: 7),
+              color: kBottomContainerColor,
+              height: kBottomContainerHeight,
+              width: double.infinity,
+              child: Center(
+                child: Text(
+                  'Calculate Your BMI',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontSize: 25, fontFamily: 'Tomorrow'),
+                ),
               ),
             ),
-          )
+          ) // Calculate Button
         ],
       ),
     );
