@@ -32,5 +32,10 @@ flutter:
         - asset: fonts/Tomorrow-Regular.ttf
 
 
+    - family: SourceSansPro
+      fonts:
+        - asset: fonts/SourceSansPro-Regular.ttf
+
+
 
 

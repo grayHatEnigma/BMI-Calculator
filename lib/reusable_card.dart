@@ -7,7 +7,7 @@ Reusable Card Widget
 // a useful reusable card widget with a custom color
 class ReusableCard extends StatelessWidget {
   final Color colour;
-  final cardChild;
+  final Widget cardChild;
   final Function onPress;
   ReusableCard({@required this.colour, this.cardChild, this.onPress});
 
