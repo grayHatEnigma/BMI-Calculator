@@ -5,12 +5,12 @@ import 'package:flutter/material.dart';
 /*
 Colors
  */
-const Color kBackgroundColor = Color(0xFF0A0E21);
+const Color kBackgroundColor = Color(0xFF0C1526);
 const Color kAccentColor = Colors.pink;
-const Color kActiveCardColor = Colors.blueGrey;
+const Color kActiveCardColor = Color(0xFF161B2B); //#
 const Color kInactiveCardColor = Color(0xFF111328);
-const Color kBottomContainerColor = Colors.redAccent;
-const Color kIconButtonColor = Color(0xFF0A0F21);
+const Color kBottomContainerColor = Color(0xFFFF0057);
+const Color kIconButtonColor = Color(0xFF202539);
 
 /*
 Constants Numbers

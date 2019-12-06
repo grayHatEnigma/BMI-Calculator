@@ -102,8 +102,8 @@ class _InputPageState extends State<InputPage> {
                             RoundSliderThumbShape(enabledThumbRadius: 12),
                         overlayShape:
                             RoundSliderOverlayShape(overlayRadius: 24),
-                        thumbColor: Color(0xFFF44336),
-                        overlayColor: Color(0x29F44336),
+                        thumbColor: Color(0xFFFF0057),
+                        overlayColor: Color(0x29FF0057),
                         activeTrackColor: Colors.white,
                         inactiveTrackColor: Colors.grey[500]),
                     child: Slider(
