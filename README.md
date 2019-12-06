@@ -1,12 +1,12 @@
-# bmi_calculator
+# BMI Calculator
 
 a Body Mass Index Calculator inspired by the beautiful designs made by Ruben Vaalt.
 
-# actual app look
+# Preview
 
-<img src="https://i.ibb.co/cYZrh9f/1.jpg" width="350" height="600" />
+<img src="https://i.ibb.co/cYZrh9f/1.jpg" width="360" height="600" />
 
-<img src="https://i.ibb.co/QjYR6Fb/2.jpg" width="350" height="600" />
+<img src="https://i.ibb.co/QjYR6Fb/2.jpg" width="360" height="600" />
 
 
 # What I've learned developing this app 
