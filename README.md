@@ -5,7 +5,7 @@ a Body Mass Index Calculator inspired by the beautiful designs made by Ruben Vaa
 # Preview
 
 <img src="https://i.ibb.co/cYZrh9f/1.jpg" width="360" height="600" />
-
+<img src="https://i.ibb.co/TRZPRGG/photo-2019-12-06-06-31-30.jpg" width="360" height="600" />
 <img src="https://i.ibb.co/QjYR6Fb/2.jpg" width="360" height="600" />
 
 
