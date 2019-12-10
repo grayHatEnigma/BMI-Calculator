@@ -7,7 +7,7 @@ Colors
  */
 const Color kBackgroundColor = Color(0xFF0C1526);
 const Color kAccentColor = Colors.pink;
-const Color kActiveCardColor = Color(0xFF161B2B); //#
+const Color kActiveCardColor = Color(0xFF161B2B);
 const Color kInactiveCardColor = Color(0xFF111328);
 const Color kBottomContainerColor = Color(0xFFFF0057);
 const Color kIconButtonColor = Color(0xFF202539);

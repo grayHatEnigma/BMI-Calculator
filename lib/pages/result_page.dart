@@ -45,6 +45,13 @@ class ResultPage extends StatelessWidget {
                     style: kNumberTextStyle.copyWith(fontSize: 80),
                   ),
                   Text(
+                    '# Normal bmi should be from 18 : 25 #',
+                    style: TextStyle(
+                        fontStyle: FontStyle.italic,
+                        color: Colors.grey,
+                        fontFamily: 'Tomorrow'),
+                  ),
+                  Text(
                     msg,
                     style: kLabelTextStyle.copyWith(fontSize: 20),
                     textAlign: TextAlign.center,
